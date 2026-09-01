@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Style Changer</title>
+</head>
+<body>
+
+<h2>Change Font Style</h2>
+
+<select id="fontSelect" onchange="changeFont()">
+    <option value="Arial">Arial</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Verdana">Verdana</option>
+</select>
+
+<p id="text">This is a sample paragraph. Select a font style from the drop-down list.</p>
+
+<script>
+function changeFont() {
+    var font = document.getElementById("fontSelect").value;
+    document.getElementById("text").style.fontFamily = font;
+}
+</script>
+
+</body>
+</html>

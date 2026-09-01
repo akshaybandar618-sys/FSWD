@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #333;
+}
+
+.profile-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+.profile {
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+    align-items: center;
+}
+
+.photo-section {
+    width: 30%;
+    text-align: center;
+}
+
+.photo-section img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #1e3a8a;
+}
+
+.photo-section h2 {
+    margin-top: 15px;
+    color: #1e3a8a;
+}
+
+.photo-section p {
+    margin-top: 8px;
+    color: #666;
+}
+
+.details {
+    width: 70%;
+}
+
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.details td:first-child {
+    font-weight: bold;
+    background: #eef2ff;
+    width: 35%;
+}
+
+section {
+    padding: 25px 30px;
+    border-top: 1px solid #ddd;
+}
+
+.qualification th {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+}
+
+.qualification td {
+    text-align: center;
+}
+
+.qualification tr:nth-child(even) {
+    background: #f5f7fa;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: #1e3a8a;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+.contact {
+    background: #f5f7fa;
+    padding: 18px;
+    border-left: 5px solid #1e3a8a;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 700px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .photo-section,
+    .details {
+        width: 100%;
+    }
+
+    .profile-container {
+        width: 95%;
+    }
+}
